@@ -1,8 +1,4 @@
-#Atividade 5: Tabuada
-
-""" Escreva um programa que exiba a tabuada de um número fornecido pelo usuário."""
-
-input = int(input('Digite um número e descubra sua tabuada:\n'))
+input = int(input("Digite um número e descubra sua tabuada:\n"))
 
 def tabuada(numero):
 

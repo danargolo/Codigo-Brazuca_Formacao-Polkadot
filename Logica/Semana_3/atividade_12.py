@@ -1,10 +1,4 @@
-#12: Jogo de Adivinhação
-
-""" Crie um jogo onde o programa escolhe um número aleatório entre 1 e 100, e o
-usuário deve adivinhar qual é o número."""
-
 import random
-
 
 def advinhacao():
   aleatorio = random.randint(1, 100)

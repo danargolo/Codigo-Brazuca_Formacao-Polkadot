@@ -1,8 +1,3 @@
-#Atividade 2: Conversão de Temperaturas
-
-""" Crie um programa que converta uma temperatura dada em Celsius para Fahrenheit
-e Kelvin."""
-
 input = float(input('Qual a temperatura em °C?\n'))
 
 def conversor_temperatura(celsius):

@@ -1,7 +1,3 @@
-#Atividade 20: Análise de Lista de Números
-
-""" Escreva um programa que peça ao usuário uma lista de números e, ao final, exiba o
-maior, o menor, e a média dos números inseridos."""
 import re
 
 def lista_numeros():

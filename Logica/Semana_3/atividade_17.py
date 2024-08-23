@@ -1,7 +1,3 @@
-#Atividade 17: Verificação de Número Perfeito
-
-""" Escreva um programa que verifique se um número dado é um número perfeito."""
-
 numero = int(input("Digite um número para verificar se é perfeito:\n"))
 
 def eh_numero_perfeito(num):

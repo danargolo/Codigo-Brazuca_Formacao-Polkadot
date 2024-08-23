@@ -1,8 +1,3 @@
-#Atividade 13: Soma de Números Pares
-
-""" Escreva um programa que calcule a soma de todos os números pares entre 1 e
-100."""
-
 def soma_numeros_pares():
   soma = 0
 

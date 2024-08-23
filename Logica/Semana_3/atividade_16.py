@@ -1,7 +1,3 @@
-#Atividade 16: Inversão de String
-
-""" Crie um programa que peça uma string ao usuário e a exiba invertida."""
-
 texto = input("Digite um texto ou palavra que deseja inverter:\n")
 
 def inverter_string(string):

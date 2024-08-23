@@ -1,8 +1,3 @@
-#Atividade 15: Soma dos N primeiros Números
-
-""" Escreva um programa que peça ao usuário um número n e calcule a soma dos
-primeiros n números naturais."""
-
 num = int(input("Digite um número: "))
 
 def somatorio_num_naturais():

@@ -1,8 +1,3 @@
-#Atividade 11: Cálculo de Área de Círculo
-
-""" Desenvolva um programa que calcule a área de um círculo a partir do raio
-fornecido pelo usuário."""
-
 raio = int(input("Digite o valor do raio, em cm:\n"))
 
 def area_circulo(raio):

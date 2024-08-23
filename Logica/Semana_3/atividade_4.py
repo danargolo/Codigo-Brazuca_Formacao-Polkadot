@@ -1,7 +1,3 @@
-#Atividade 4: Verificação de Palíndromo
-
-""" Crie um programa que verifique se uma palavra ou frase é um palíndromo."""
-
 input = input("Digite uma palavra ou frase:\n")
 
 def eh_palindromo(texto):

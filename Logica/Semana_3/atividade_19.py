@@ -1,8 +1,3 @@
-#Atividade 19: Média Ponderada
-
-""" Crie um programa que calcule a média ponderada de três notas fornecidas pelo
-usuário, considerando os pesos 2, 3 e 5."""
-
 a = float(input("Digite primeira nota com peso 2:\n "))
 b = float(input("Digite segunda nota com peso 3:\n "))
 c = float(input("Digite terceira nota com peso 5:\n "))

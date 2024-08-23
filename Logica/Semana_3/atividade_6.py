@@ -1,8 +1,3 @@
-#Atividade 6: Contagem de Vogais
-
-""" Crie um programa que peça uma frase ao usuário e conte quantas vogais (a, e, i, o,
-u) ela contém."""
-
 frase = input("Digite uma frase ou palavra:")
 
 def contador_vogais(texto):

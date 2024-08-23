@@ -1,8 +1,3 @@
-#Atividade 9: Ordenação de Números
-
-""" Crie um programa que leia três números diferentes e os imprima em ordem
-crescente."""
-
 def ordenacao_cresc():
   lista = []
 
