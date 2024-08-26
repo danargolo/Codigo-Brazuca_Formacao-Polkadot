@@ -5,7 +5,10 @@ def generate_bingo_card():
   NUMBER_LIMIT = 5
 
   while len(card) < NUMBER_LIMIT:
-    card.append(random.randint(1,75))
+    random_number = random.randint(1,75)
+
+    if random_number not in card:
+      card.append(random_number)
   
   return card
 
