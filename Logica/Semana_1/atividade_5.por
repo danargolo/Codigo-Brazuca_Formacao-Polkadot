@@ -2,11 +2,11 @@ programa {
   funcao inicio() {
     real celsius, fahrenheit
 
-   escreva("Digite a temperatura em graus Celsius: ")
-   leia(celsius)
+    escreva("Digite a temperatura em graus Celsius: ")
+    leia(celsius)
 
-   fahrenheit = (celsius * 9/5) + 32
+    fahrenheit = (celsius * 9/5) + 32
 
-   escreva("A temperatura em Fahrenheit é: ", fahrenheit)
+    escreva("A temperatura em Fahrenheit é: ", fahrenheit)
   }
 }
