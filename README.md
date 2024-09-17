@@ -5,7 +5,7 @@ O projeto visa capacitar programadores no desenvolvimento de tecnologias de bloc
 ## 📚 Disciplinas
 
 - [x] **Introdução à Lógica de Codiﬁcação e Algoritmos** 
-- [ ] **JavaScript** 
+- [x] **JavaScript** 
 - [ ] **TypeScript**
 - [ ] **Web3**
 - [ ] **Introdução ao Ecossistema Polkadot**
