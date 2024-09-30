@@ -1,10 +1,10 @@
-const soma = (a , b) => {
+const sum = (a , b) => {
   return a + b 
 }
-console.log(soma(3,4))
+console.log(sum(3,4))
 
 /* com Closure  e arrow function - 
-const soma = (a) => (b) => a + b
+const sum = (a) => (b) => a + b
 
-console.log(soma(6)(4))
+console.log(sum(6)(4))
 */
