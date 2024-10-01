@@ -1,5 +1,6 @@
 const greatestNumber = (a, b) => {
-  return a >= b ? console.log(a) : console.log(b)
+  return a >= b ? a : b
+
 }
 
-greatestNumber(-14, -15)
+console.log(greatestNumber(-14, -6))
