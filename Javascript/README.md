@@ -15,7 +15,7 @@ Cada atividade está organizada em arquivos numerados, de `atividade_1.js` a `at
             Print Hello World
           </a>
         </summary>
-        <p style="margin-left: 26px; font-size: 1.2em;">Descrição:&nbsp;&nbsp;&nbsp;Escreva um programa que peça um número inteiro ao usuário e calcule o fatorial desse número.</p>
+        <p style="margin-left: 26px; font-size: 1.2em;">Descrição:&nbsp;&nbsp;&nbsp;Imprima um Hello World.</p>
       </details>
       <details>
         <summary>
@@ -24,179 +24,269 @@ Cada atividade está organizada em arquivos numerados, de `atividade_1.js` a `at
             Soma
           </a>
         </summary>
-        <p style="margin-left: 26px; font-size: 1.2em;">Descrição:&nbsp;&nbsp;&nbsp; Crie um programa que converta uma temperatura dada em Celsius para Fahrenheit e Kelvin.</p>
+        <p style="margin-left: 26px; font-size: 1.2em;">Descrição:&nbsp;&nbsp;&nbsp; Crie uma função que some dois números.</p>
       </details>
       <details>
         <summary>
           <strong style="display: inline-block; width: 100px;">Atividade 3:</strong>
           <a href="./atividade_3.js" style="font-size: 1.2em;"> 
-            Cálculo de IMC
+            Par ou Ímpar
           </a>
         </summary>
-        <p style="margin-left: 26px; font-size: 1.2em;">Descrição:&nbsp;&nbsp;&nbsp; Escreva um programa que peça o peso e a altura de uma pessoa e calcule seu Índice de Massa Corporal IMC</p>
+        <p style="margin-left: 26px; font-size: 1.2em;">Descrição:&nbsp;&nbsp;&nbsp; Verifique se um número é par ou ímpar.</p>
       </details>
       <details>
         <summary>
           <strong style="display: inline-block; width: 100px;">Atividade 4:</strong>
           <a href="./atividade_4.js" style="font-size: 1.2em;"> 
-            Verificação de Palíndromo
+            Maior Valor
           </a>
         </summary>
-        <p style="margin-left: 26px; font-size: 1.2em;">Descrição:&nbsp;&nbsp;&nbsp; Crie um programa que verifique se uma palavra ou frase é um palíndromo.</p>
+        <p style="margin-left: 26px; font-size: 1.2em;">Descrição:&nbsp;&nbsp;&nbsp; Crie uma função que retorne o maior de dois números.</p>
       </details>
       <details>
         <summary>
           <strong style="display: inline-block; width: 100px;">Atividade 5:</strong>
           <a href="./atividade_5.js" style="font-size: 1.2em;"> 
-            Tabuada
+            Imprime Sequência
           </a>
         </summary>
-        <p style="margin-left: 26px; font-size: 1.2em;">Descrição:&nbsp;&nbsp;&nbsp; Escreva um programa que exiba a tabuada de um número fornecido pelo usuário.</p>
+        <p style="margin-left: 26px; font-size: 1.2em;">Descrição:&nbsp;&nbsp;&nbsp; Imprima todos os números de 1 a 10.</p>
       </details>
       <details>
         <summary>
           <strong style="display: inline-block; width: 100px;">Atividade 6:</strong>
           <a href="./atividade_6.js" style="font-size: 1.2em;"> 
-            Contagem de Vogais
+            Soma Valores
           </a>
         </summary>
-        <p style="margin-left: 26px; font-size: 1.2em;">Descrição:&nbsp;&nbsp;&nbsp; Crie um programa que peça uma frase ao usuário e conte quantas vogais (a, e, i, o, u) ela contém.</p>
+        <p style="margin-left: 26px; font-size: 1.2em;">Descrição:&nbsp;&nbsp;&nbsp; Calcule a soma de todos os números de 1 a 100.</p>
       </details>
       <details>
         <summary>
           <strong style="display: inline-block; width: 100px;">Atividade 7:</strong>
           <a href="./atividade_7.js" style="font-size: 1.2em;"> 
-            Média de Notas
+            Número Primo
           </a>
         </summary>
-        <p style="margin-left: 26px; font-size: 1.2em;">Descrição:&nbsp;&nbsp;&nbsp; Desenvolva um programa que calcule a média de várias notas inseridas pelo usuário. O programa deve parar de pedir notas quando o usuário digitar -1.</p>
+        <p style="margin-left: 26px; font-size: 1.2em;">Descrição:&nbsp;&nbsp;&nbsp; Verifique se um número é primo.</p>
       </details>
       <details>
         <summary>
           <strong style="display: inline-block; width: 100px;">Atividade 8:</strong>
           <a href="./atividade_8.js" style="font-size: 1.2em;"> 
-            Sequência de Fibonacci
+            Média
           </a>
         </summary>
-        <p style="margin-left: 26px; font-size: 1.2em;">Descrição:&nbsp;&nbsp;&nbsp; Escreva um programa que mostre os primeiros n números da sequência de Fibonacci, onde n é informado pelo usuário.</p>
+        <p style="margin-left: 26px; font-size: 1.2em;">Descrição:&nbsp;&nbsp;&nbsp; Crie uma função que retorne a média de uma lista de números.</p>
       </details>
       <details>
         <summary>
           <strong style="display: inline-block; width: 100px;">Atividade 9:</strong>
           <a href="./atividade_9.js" style="font-size: 1.2em;"> 
-            Ordenação de Números
+            Revert String
           </a>
         </summary>
-        <p style="margin-left: 26px; font-size: 1.2em;">Descrição:&nbsp;&nbsp;&nbsp; Crie um programa que leia três números diferentes e os imprima em ordem crescente.</p>
+        <p style="margin-left: 26px; font-size: 1.2em;">Descrição:&nbsp;&nbsp;&nbsp; Crie uma função que inverta uma string.</p>
       </details>
       <details>
         <summary>
           <strong style="display: inline-block; width: 100px;">Atividade 10:</strong>
           <a href="./atividade_10.js" style="font-size: 1.2em; "> 
-            Números Pares e Ímpares
+            Contador de Vogal
           </a>
         </summary>
-        <p style="margin-left: 26px; font-size: 1.2em;">Descrição:&nbsp;&nbsp;&nbsp; Escreva um programa que peça ao usuário um número inteiro e informe se ele é par ou ímpar.</p>
+        <p style="margin-left: 26px; font-size: 1.2em;">Descrição:&nbsp;&nbsp;&nbsp; Conte quantas vogais existem em uma string.</p>
       </details>
-    </td>
-    <td class="activity-column">
       <details>
         <summary>
           <strong style="display: inline-block; width: 100px;">Atividade 11:</strong>
           <a href="./atividade_11.js" style="font-size: 1.2em;"> 
-            Cálculo de Área de Círculo
+            Verificador de elemento
           </a>
       </summary>
-        <p style="margin-left: 26px; font-size: 1.2em;">Descrição:&nbsp;&nbsp;&nbsp; Desenvolva um programa que calcule a área de um círculo a partir do raio fornecido pelo usuário.</p>
+        <p style="margin-left: 26px; font-size: 1.2em;">Descrição:&nbsp;&nbsp;&nbsp; Verifique se um número está presente em uma lista.</p>
       </details>
       <details>
         <summary>
           <strong style="display: inline-block; width: 100px;">Atividade 12:</strong>
           <a href="./atividade_12.js" style="font-size: 1.2em;"> 
-            Jogo de Adivinhação
+            Fatorial
           </a>
         </summary>
-        <p style="margin-left: 26px; font-size: 1.2em;">Descrição:&nbsp;&nbsp;&nbsp; Crie um jogo onde o programa escolhe um número aleatório entre 1 e 100, e o usuário deve adivinhar qual é o número.</p>
+        <p style="margin-left: 26px; font-size: 1.2em;">Descrição:&nbsp;&nbsp;&nbsp; Crie uma função que calcule o fatorial de um número.</p>
       </details>
       <details>
         <summary>
           <strong style="display: inline-block; width: 100px;">Atividade 13:</strong>
           <a href="./atividade_13.js" style="font-size: 1.2em;"> 
-            Soma de Números Pares
+            Sequência de Fibonacci
           </a>
         </summary>
-        <p style="margin-left: 26px; font-size: 1.2em;">Descrição:&nbsp;&nbsp;&nbsp; Escreva um programa que calcule a soma de todos os números pares entre 1 e 100.</p>
+        <p style="margin-left: 26px; font-size: 1.2em;">Descrição:&nbsp;&nbsp;&nbsp; Imprima a sequência de Fibonacci até o décimo termo.</p>
       </details>
       <details>
         <summary>
           <strong style="display: inline-block; width: 100px;">Atividade 14:</strong>
           <a href="./atividade_14.js" style="font-size: 1.2em;"> 
-            Calculadora Simples
+            Removedor Espaço
           </a>
         </summary>
-        <p style="margin-left: 26px; font-size: 1.2em;">Descrição:&nbsp;&nbsp;&nbsp; Crie um programa que funcione como uma calculadora simples, pedindo ao usuário dois números e a operação que deseja realizar.</p>
+        <p style="margin-left: 26px; font-size: 1.2em;">Descrição:&nbsp;&nbsp;&nbsp; Remova todos os espaços de uma string.</p>
       </details>
       <details>
         <summary>
           <strong style="display: inline-block; width: 100px;">Atividade 15:</strong>
           <a href="./atividade_15.js" style="font-size: 1.2em;"> 
-            Soma dos N primeiros Números
+            Contador de caractere
           </a>
         </summary>
-        <p style="margin-left: 26px; font-size: 1.2em;">Descrição:&nbsp;&nbsp;&nbsp; Escreva um programa que peça ao usuário um número n e calcule a soma dos primeiros n números naturais.</p>
+        <p style="margin-left: 26px; font-size: 1.2em;">Descrição:&nbsp;&nbsp;&nbsp; Crie uma função que conte quantas vezes um caractere aparece em uma string.</p>
       </details>
+    </td>
+    <td class="activity-column">
       <details>
         <summary>
           <strong style="display: inline-block; width: 100px;">Atividade 16:</strong>
           <a href="./atividade_16.js" style="font-size: 1.2em;"> 
-            Inversão de String
+            Palíndromo
           </a>
         </summary>
-        <p style="margin-left: 26px; font-size: 1.2em;">Descrição:&nbsp;&nbsp;&nbsp; Crie um programa que peça uma string ao usuário e a exiba invertida.</p>
+        <p style="margin-left: 26px; font-size: 1.2em;">Descrição:&nbsp;&nbsp;&nbsp; Verifique se a string é a mesma quando lida de trás para frente.</p>
       </details>
       <details>
         <summary>
           <strong style="display: inline-block; width: 100px;">Atividade 17:</strong>
           <a href="./atividade_17.js" style="font-size: 1.2em;"> 
-            Verificação de Número Perfeito
+            Ordenação
           </a>
         </summary>
-        <p style="margin-left: 26px; font-size: 1.2em;">Descrição:&nbsp;&nbsp;&nbsp; Escreva um programa que verifique se um número dado é um número perfeito.</p>
+        <p style="margin-left: 26px; font-size: 1.2em;">Descrição:&nbsp;&nbsp;&nbsp; Crie uma função que ordene uma lista de números.</p>
       </details>
       <details>
         <summary>
           <strong style="display: inline-block; width: 100px;">Atividade 18:</strong>
           <a href="./atividade_18.js" style="font-size: 1.2em;"> 
-            Contagem de Palavras
+            Número Randômico
           </a>
         </summary>
-        <p style="margin-left: 26px; font-size: 1.2em;">Descrição:&nbsp;&nbsp;&nbsp; Desenvolva um programa que conte quantas palavras há em uma frase fornecida pelo usuário.</p>
+        <p style="margin-left: 26px; font-size: 1.2em;">Descrição:&nbsp;&nbsp;&nbsp; Gere um número aleatório entre 1 e 100.</p>
       </details>
       <details>
         <summary>
           <strong style="display: inline-block; width: 100px;">Atividade 19:</strong>
           <a href="./atividade_19.js" style="font-size: 1.2em;"> 
-            Média Ponderada
+            Conversor Fahrenheit
           </a>
         </summary>
-        <p style="margin-left: 26px; font-size: 1.2em;">Descrição:&nbsp;&nbsp;&nbsp; Crie um programa que calcule a média ponderada de três notas fornecidas pelo usuário, considerando os pesos 2, 3 e 5.</p>
+        <p style="margin-left: 26px; font-size: 1.2em;">Descrição:&nbsp;&nbsp;&nbsp; Converta uma temperatura de Celsius para Fahrenheit.</p>
       </details>
       <details>
         <summary>
           <strong style="display: inline-block; width: 100px;">Atividade 20:</strong>
           <a href="./atividade_20.js" style="font-size: 1.2em;"> 
-            Análise de Lista de Números
+            Soma Dígitos
           </a>
         </summary>
-        <p style="margin-left: 26px; font-size: 1.2em;">Descrição:&nbsp;&nbsp;&nbsp; Escreva um programa que peça ao usuário uma lista de números e, ao final, exiba o maior, o menor, e a média dos números inseridos.</p>
+        <p style="margin-left: 26px; font-size: 1.2em;">Descrição:&nbsp;&nbsp;&nbsp; Crie uma função que retorne a soma dos dígitos de um número.</p>
+      </details>
+      <details>
+        <summary>
+          <strong style="display: inline-block; width: 100px;">Atividade 21:</strong>
+          <a href="./atividade_21.js" style="font-size: 1.2em;"> 
+            Múltiplos
+          </a>
+        </summary>
+        <p style="margin-left: 26px; font-size: 1.2em;">Descrição:&nbsp;&nbsp;&nbsp; Verifique se dois números são múltiplos.</p>
+      </details>
+      <details>
+        <summary>
+          <strong style="display: inline-block; width: 100px;">Atividade 22:</strong>
+          <a href="./atividade_20.js" style="font-size: 1.2em;"> 
+            Valor Absoluto
+          </a>
+        </summary>
+        <p style="margin-left: 26px; font-size: 1.2em;">Descrição:&nbsp;&nbsp;&nbsp; Crie uma função que retorne o valor absoluto de um número.</p>
+      </details>
+      <details>
+        <summary>
+          <strong style="display: inline-block; width: 100px;">Atividade 23:</strong>
+          <a href="./atividade_23.js" style="font-size: 1.2em;"> 
+            Raíz Quadrada
+          </a>
+        </summary>
+        <p style="margin-left: 26px; font-size: 1.2em;">Descrição:&nbsp;&nbsp;&nbsp; Calcule a raiz quadrada de um número.</p>
+      </details>
+      <details>
+        <summary>
+          <strong style="display: inline-block; width: 100px;">Atividade 24:</strong>
+          <a href="./atividade_24.js" style="font-size: 1.2em;"> 
+            Divisores
+          </a>
+        </summary>
+        <p style="margin-left: 26px; font-size: 1.2em;">Descrição:&nbsp;&nbsp;&nbsp; Crie uma função que retorne os divisores de um número.</p>
+      </details>
+      <details>
+        <summary>
+          <strong style="display: inline-block; width: 100px;">Atividade 25:</strong>
+          <a href="./atividade_25.js" style="font-size: 1.2em;"> 
+            Substituir Vogais
+          </a>
+        </summary>
+        <p style="margin-left: 26px; font-size: 1.2em;">Descrição:&nbsp;&nbsp;&nbsp; Substitua todas as vogais de uma string por '*'.</p>
+      </details>
+      <details>
+        <summary>
+          <strong style="display: inline-block; width: 100px;">Atividade 26:</strong>
+          <a href="./atividade_26.js" style="font-size: 1.2em;"> 
+            Substring
+          </a>
+        </summary>
+        <p style="margin-left: 26px; font-size: 1.2em;">Descrição:&nbsp;&nbsp;&nbsp; Verifique se uma string contém uma substring.</p>
+      </details>
+      <details>
+        <summary>
+          <strong style="display: inline-block; width: 100px;">Atividade 27:</strong>
+          <a href="./atividade_27.js" style="font-size: 1.2em;"> 
+            Soma Pares
+          </a>
+        </summary>
+        <p style="margin-left: 26px; font-size: 1.2em;">Descrição:&nbsp;&nbsp;&nbsp; Crie uma função que retorne a soma dos números pares de uma lista.</p>
+      </details>
+      <details>
+        <summary>
+          <strong style="display: inline-block; width: 100px;">Atividade 28:</strong>
+          <a href="./atividade_28.js" style="font-size: 1.2em;"> 
+            Multiplica Valores
+          </a>
+        </summary>
+        <p style="margin-left: 26px; font-size: 1.2em;">Descrição:&nbsp;&nbsp;&nbsp; Crie uma função que multiplique todos os elementos de uma lista.</p>
+      </details>
+      <details>
+        <summary>
+          <strong style="display: inline-block; width: 100px;">Atividade 29:</strong>
+          <a href="./atividade_29.js" style="font-size: 1.2em;"> 
+            Ordem Crescente
+          </a>
+        </summary>
+        <p style="margin-left: 26px; font-size: 1.2em;">Descrição:&nbsp;&nbsp;&nbsp; Verifique se uma lista está em ordem crescente.</p>
+      </details>
+      <details>
+        <summary>
+          <strong style="display: inline-block; width: 100px;">Atividade 30:</strong>
+          <a href="./atividade_30.js" style="font-size: 1.2em;"> 
+            Contador Ímpares
+          </a>
+        </summary>
+        <p style="margin-left: 26px; font-size: 1.2em;">Descrição:&nbsp;&nbsp;&nbsp; Crie uma função que conte quantos números ímpares existem em uma lista.</p>
       </details>
     </td>
   </tr>
 </table>
 
 ## Como rodar
-Cada arquivo de atividade é um script jsthon independente. Para executar qualquer um dos exercícios, basta navegar até a pasta onde o arquivo está localizado e rodar o comando:
+Cada arquivo de atividade é um script js independente. <br/>Para executar qualquer um dos exercícios, basta navegar até a pasta onde o arquivo está localizado e rodar o comando:
 
 ```
-jsthon3 atividade_X.js
+node atividade_X.js
 ```
