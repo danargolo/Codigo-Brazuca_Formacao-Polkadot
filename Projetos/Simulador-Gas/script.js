@@ -1,5 +1,13 @@
+let contador = 0;
 let divMoeda = document.getElementById('selecao-moeda');
 let moedaButtons = document.getElementsByClassName('moeda-btn');
+let contadorDisplay = document.getElementById('contador-transacoes');
+
+function incrementarContador () {
+  contador += 1;
+
+  contadorDisplay.textContent = `Transações simuladas: ${contador}`;
+};
 
 document.getElementById('valor-transacao').addEventListener('input', function () {
   let value = this.value;
@@ -59,4 +67,5 @@ document.getElementById('calcular').addEventListener('click', function () {
   } else {
     document.getElementById('resultado').innerHTML = '<p style="color:red;">Por favor, insira  um valor de transação válido.</p > ';
   }
+  incrementarContador();
 });
