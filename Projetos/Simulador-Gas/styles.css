@@ -45,10 +45,29 @@ button:hover {
   font-weight: bold;
 }
 
+#input-container {
+  display: flex;
+}
+
 #excecao {
   display: flex;
   margin: 5px 0 25px 5px;
   font-size: 14px;
   color: red;
   visibility: hidden;
+}
+
+#selecao-moeda {
+  display: block;
+  position: relative;
+  top: -155px;
+  left: 94px;
+  width: 440px;
+  height: 200px;
+  border: 2px solid red;
+  background-color: #fff;
+}
+
+.moeda-btn {
+  
 }

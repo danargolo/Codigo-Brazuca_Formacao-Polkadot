@@ -1,3 +1,6 @@
+let divMoeda = document.getElementById('selecao-moeda');
+let moedaButtons = document.getElementsByClassName('moeda-btn');
+
 document.getElementById('valor-transacao').addEventListener('input', function () {
   let value = this.value;
   let excecao = document.getElementById('excecao');
@@ -9,6 +12,22 @@ document.getElementById('valor-transacao').addEventListener('input', function ()
     excecao.style.visibility = 'hidden';
   }
 })
+
+document.getElementById('seletor-btn').addEventListener('click', function () {
+
+  if (divMoeda.style.display === 'block') {
+    divMoeda.style.display = 'none';
+  } else {
+    divMoeda.style.display = 'block';
+  }
+})
+
+for (let i = 0; i < moedaButtons.length; i++) {
+  moedaButtons[i].addEventListener('click', function () {
+    document.getElementById('seletor-btn').textContent = moedaButtons[i].textContent;
+    divMoeda.style.display = 'none';
+  });
+}
 
 document.getElementById('calcular').addEventListener('click', function () {
   // Captura os valores inseridos pelo usuário
