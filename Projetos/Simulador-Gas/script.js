@@ -9,6 +9,7 @@ function incrementarContador () {
   contadorDisplay.textContent = `Transações simuladas: ${contador}`;
 };
 
+
 document.getElementById('valor-transacao').addEventListener('input', function () {
   let value = this.value;
   let excecao = document.getElementById('excecao');
@@ -67,5 +68,7 @@ document.getElementById('calcular').addEventListener('click', function () {
   } else {
     document.getElementById('resultado').innerHTML = '<p style="color:red;">Por favor, insira  um valor de transação válido.</p > ';
   }
+  document.getElementById('valor-transacao').value = 0
+  adicionaHistorico(valorTransacao, complexidade)
   incrementarContador();
 });
