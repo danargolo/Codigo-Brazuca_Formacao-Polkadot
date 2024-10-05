@@ -1,7 +1,9 @@
 let contador = 0;
+
 let divMoeda = document.getElementById('selecao-moeda');
 let moedaButtons = document.getElementsByClassName('moeda-btn');
 let contadorDisplay = document.getElementById('contador-transacoes');
+let historicoLista = document.getElementById('historico-lista');
 
 function incrementarContador () {
   contador += 1;
@@ -9,6 +11,13 @@ function incrementarContador () {
   contadorDisplay.textContent = `Transações simuladas: ${contador}`;
 };
 
+function adicionaHistorico (valorTransacao, complexidade) {
+
+  let li = document.createElement('li');
+  li.textContent = `Valor: ${valorTransacao} DOT, Complexidade: ${complexidade}, valor gas?`;
+
+  historicoLista.appendChild(li);
+}
 
 document.getElementById('valor-transacao').addEventListener('input', function () {
   let value = this.value;
@@ -71,4 +80,30 @@ document.getElementById('calcular').addEventListener('click', function () {
   document.getElementById('valor-transacao').value = 0
   adicionaHistorico(valorTransacao, complexidade)
   incrementarContador();
+
+});
+
+
+function openTab(evt, tabName) {
+
+  console.log(evt);
+  
+
+  let tabContents = document.getElementsByClassName('tab-conteudo');
+  for (let i = 0; i < tabContents.length; i++) {
+    tabContents[i].style.display = 'none';
+  }
+
+  document.getElementById(tabName).style.display = 'block';
+
+  let tabButtons = document.getElementsByClassName('tab-btn');
+  for (let i = 0; i < tabButtons.length; i++) {
+    tabButtons[i].className = tabButtons[i].className.replace('active', '');
+  }
+
+  evt.currentTarget.className += 'active';
+}
+
+document.addEventListener('DOMContentLoaded', function () {
+  document.querySelector('.tab-btn').click();
 });

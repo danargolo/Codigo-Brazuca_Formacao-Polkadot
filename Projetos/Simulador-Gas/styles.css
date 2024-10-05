@@ -58,7 +58,7 @@ button:hover {
 }
 
 #selecao-moeda {
-  display: block;
+  display: none;
   position: relative;
   top: -155px;
   left: 94px;
@@ -68,6 +68,3 @@ button:hover {
   background-color: #fff;
 }
 
-.moeda-btn {
-  
-}
