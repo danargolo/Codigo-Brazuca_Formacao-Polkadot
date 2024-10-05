@@ -1,9 +1,12 @@
 let contador = 0;
+let historicoTimeout;
 
 let divMoeda = document.getElementById('selecao-moeda');
 let moedaButtons = document.getElementsByClassName('moeda-btn');
 let contadorDisplay = document.getElementById('contador-transacoes');
 let historicoLista = document.getElementById('historico-lista');
+let temporizador = document.getElementById('temporizador')
+
 
 function incrementarContador () {
   contador += 1;
@@ -17,7 +20,38 @@ function adicionaHistorico (valorTransacao, complexidade) {
   li.textContent = `Valor: ${valorTransacao} DOT, Complexidade: ${complexidade}, valor gas?`;
 
   historicoLista.appendChild(li);
+
 }
+
+function limparHistorico() {
+  historicoLista.innerHTML = '';
+  contador = 0;
+  contadorDisplay.textContent = `Transações simuladas: ${contador}`;
+  console.log('O histórico foi limpo automaticamente.');
+}
+
+function iniciarTemporizador(duracao, display) {
+  let tempoRestante = duracao;
+  const temporizador = setInterval(function () {
+
+    let minutos = Math.floor(tempoRestante / 60);
+    let segundos = tempoRestante % 60;
+
+    minutos = minutos < 10 ? '0' + minutos : minutos;
+    segundos = segundos < 10 ? '0' + segundos : segundos;
+
+    display.textContent = minutos + ":" + segundos;
+
+    if (tempoRestante <= 0) {
+      clearInterval(temporizador);
+      display.textContent = "00:00";
+      iniciarTemporizador(duracao, display)
+      limparHistorico();
+    }
+
+    tempoRestante--;
+  }, 1000);
+};
 
 document.getElementById('valor-transacao').addEventListener('input', function () {
   let value = this.value;
@@ -80,14 +114,10 @@ document.getElementById('calcular').addEventListener('click', function () {
   document.getElementById('valor-transacao').value = 0
   adicionaHistorico(valorTransacao, complexidade)
   incrementarContador();
-
 });
 
 
-function openTab(evt, tabName) {
-
-  console.log(evt);
-  
+function openTab(evt, tabName) {  
 
   let tabContents = document.getElementsByClassName('tab-conteudo');
   for (let i = 0; i < tabContents.length; i++) {
@@ -106,4 +136,6 @@ function openTab(evt, tabName) {
 
 document.addEventListener('DOMContentLoaded', function () {
   document.querySelector('.tab-btn').click();
+
+  iniciarTemporizador(90, temporizador);
 });
