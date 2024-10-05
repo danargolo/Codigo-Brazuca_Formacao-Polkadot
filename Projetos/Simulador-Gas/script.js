@@ -1,3 +1,15 @@
+document.getElementById('valor-transacao').addEventListener('input', function () {
+  let value = this.value;
+  let excecao = document.getElementById('excecao');
+
+  if (value < 0) {
+    excecao.textContent = 'O valor não pode ser negativo.';
+    excecao.style.visibility = 'visible';
+  } else {
+    excecao.style.visibility = 'hidden';
+  }
+})
+
 document.getElementById('calcular').addEventListener('click', function () {
   // Captura os valores inseridos pelo usuário
   let valorTransacao = parseFloat(document.getElementById('valor-transacao').value);
