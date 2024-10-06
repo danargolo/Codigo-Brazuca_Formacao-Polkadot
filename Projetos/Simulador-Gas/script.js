@@ -39,8 +39,8 @@ function validarValor(value) {
       excecao.textContent = 'O valor não pode ser negativo.';
       excecao.style.visibility = 'visible';
       btnCalcular.disabled = true;
-  } else if (+value === 0) {  
-      excecao.textContent = 'O valor não pode ser zero.';
+  } else if (+value === 0 || isNaN(+value)) {  
+      excecao.textContent = 'O valor não pode ser zero ou inválido.';
       excecao.style.visibility = 'visible';
       btnCalcular.disabled = true;
     } else {
@@ -52,7 +52,7 @@ function validarValor(value) {
   document.getElementById('valor-transacao').addEventListener('input', function () {
     validarValor(this.value);
   });
-  
+
   document.getElementById('seletor-btn').addEventListener('click', function () {
     
   if (divMoeda.style.display === 'block') {
@@ -99,9 +99,11 @@ document.getElementById('calcular').addEventListener('click', function () {
   // } else {
   //   document.getElementById('resultado').innerHTML = '<p style="color:red;">Por favor, insira  um valor de transação válido.</p > ';
   // }
-  document.getElementById('valor-transacao').value = 0
+  document.getElementById('valor-transacao').value = undefined
   adicionaHistorico(valorTransacao, complexidade)
   incrementarContador();
+
+  this.disabled = true;
 });
 
 
@@ -122,8 +124,7 @@ function openTab(evt, tabName) {
   evt.currentTarget.className += 'active';
 }
 
-
-
 document.addEventListener('DOMContentLoaded', function () {
   document.querySelector('.tab-btn').click();
+  
 });
