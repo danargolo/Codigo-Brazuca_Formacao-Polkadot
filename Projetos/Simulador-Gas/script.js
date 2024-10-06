@@ -3,15 +3,18 @@ let historicoTimeout;
 
 let divMoeda = document.getElementById('selecao-moeda');
 let moedaButtons = document.getElementsByClassName('moeda-btn');
-let contadorDisplay = document.getElementById('contador-transacoes');
+let contadorDisplay = document.getElementById('id_transacao');
 let historicoLista = document.getElementById('historico-lista');
-let temporizador = document.getElementById('temporizador')
+let temporizador = document.getElementById('temporizador');
+const excecao = document.getElementById('excecao');
+const btnCalcular = document.getElementById('calcular');
+const resultado = document.getElementById('resultado');  
 
 
 function incrementarContador () {
   contador += 1;
 
-  contadorDisplay.textContent = `Transações simuladas: ${contador}`;
+  contadorDisplay.textContent = `# ${contador}`;
 };
 
 function adicionaHistorico (valorTransacao, complexidade) {
@@ -26,47 +29,32 @@ function adicionaHistorico (valorTransacao, complexidade) {
 function limparHistorico() {
   historicoLista.innerHTML = '';
   contador = 0;
-  contadorDisplay.textContent = `Transações simuladas: ${contador}`;
+  contadorDisplay.textContent = `# ${contador}`;
   console.log('O histórico foi limpo automaticamente.');
 }
 
-function iniciarTemporizador(duracao, display) {
-  let tempoRestante = duracao;
-  const temporizador = setInterval(function () {
 
-    let minutos = Math.floor(tempoRestante / 60);
-    let segundos = tempoRestante % 60;
-
-    minutos = minutos < 10 ? '0' + minutos : minutos;
-    segundos = segundos < 10 ? '0' + segundos : segundos;
-
-    display.textContent = minutos + ":" + segundos;
-
-    if (tempoRestante <= 0) {
-      clearInterval(temporizador);
-      display.textContent = "00:00";
-      iniciarTemporizador(duracao, display)
-      limparHistorico();
+function validarValor(value) {
+  if (+value < 0) {
+      excecao.textContent = 'O valor não pode ser negativo.';
+      excecao.style.visibility = 'visible';
+      btnCalcular.disabled = true;
+  } else if (+value === 0) {  
+      excecao.textContent = 'O valor não pode ser zero.';
+      excecao.style.visibility = 'visible';
+      btnCalcular.disabled = true;
+    } else {
+      excecao.style.visibility = 'hidden';
+      btnCalcular.disabled = false;
     }
-
-    tempoRestante--;
-  }, 1000);
-};
-
-document.getElementById('valor-transacao').addEventListener('input', function () {
-  let value = this.value;
-  let excecao = document.getElementById('excecao');
-
-  if (value < 0) {
-    excecao.textContent = 'O valor não pode ser negativo.';
-    excecao.style.visibility = 'visible';
-  } else {
-    excecao.style.visibility = 'hidden';
   }
-})
-
-document.getElementById('seletor-btn').addEventListener('click', function () {
-
+  
+  document.getElementById('valor-transacao').addEventListener('input', function () {
+    validarValor(this.value);
+  });
+  
+  document.getElementById('seletor-btn').addEventListener('click', function () {
+    
   if (divMoeda.style.display === 'block') {
     divMoeda.style.display = 'none';
   } else {
@@ -101,16 +89,16 @@ document.getElementById('calcular').addEventListener('click', function () {
   // Calcula o custo total do gas
   let custoGas = valorTransacao * precoGas;
   // Exibe o resultado
-  if (valorTransacao > 0) {
-    document.getElementById('resultado').innerHTML = `
-  <p>Valor da Transação: ${valorTransacao} DOT</p>
-  <p>Complexidade: ${complexidade.charAt(0).toUpperCase() +
-      complexidade.slice(1)}</p>
-  <p><strong>Custo Estimado do Gas: ${custoGas.toFixed(2)} DOT</strong></p>
-  `;
-  } else {
-    document.getElementById('resultado').innerHTML = '<p style="color:red;">Por favor, insira  um valor de transação válido.</p > ';
-  }
+  // if (valorTransacao > 0) {
+  //   document.getElementById('resultado').innerHTML = `
+  // <p>Valor da Transação: ${valorTransacao} DOT</p>
+  // <p>Complexidade: ${complexidade.charAt(0).toUpperCase() +
+  //     complexidade.slice(1)}</p>
+  // <p><strong>Custo Estimado do Gas: ${custoGas.toFixed(2)} DOT</strong></p>
+  // `;
+  // } else {
+  //   document.getElementById('resultado').innerHTML = '<p style="color:red;">Por favor, insira  um valor de transação válido.</p > ';
+  // }
   document.getElementById('valor-transacao').value = 0
   adicionaHistorico(valorTransacao, complexidade)
   incrementarContador();
@@ -134,8 +122,8 @@ function openTab(evt, tabName) {
   evt.currentTarget.className += 'active';
 }
 
+
+
 document.addEventListener('DOMContentLoaded', function () {
   document.querySelector('.tab-btn').click();
-
-  iniciarTemporizador(90, temporizador);
 });
