@@ -14,12 +14,12 @@
     </div>
     
     <div id="simulador" class="tab-conteudo">
-      <p id="contador-transacoes">Transações simuladas: 0</p>
+      <!-- <p id="contador-transacoes">Transações simuladas: 0</p> -->
       <form id="gas-form">
-        <label for="valor-transacao">Valor da Transação (DOT):</label>
+        <!-- <label for="valor-transacao">Valor da Transação (DOT):</label> -->
         <div id="input-container">
-          <input type="number" id="valor-transacao" required/>
           <button type="button" id="seletor-btn">DOT</button>
+          <input type="number" id="valor-transacao" placeholder="Insira o valor..." required/>
         </div>
         <p id="excecao">Erro ajuste o input</p>
         <label for="complexidade">Complexidade da Transação:</label>
@@ -42,7 +42,13 @@
           <button class="moeda-btn">EUR</button>
         </div>
       </div>
-      <div id="resultado"></div>
+      <div id="resultado">
+        <p class="result_p" id="id_transacao"># 0</p>
+        <p class="result_p" id="result_gas">Transação</p>
+        <p class="result_p" id="result_complex">Complexidade</p>
+        <p class="result_p" id="result_dot">preço estimado em</p>
+        <p class="result_p" id="result_currency">preço estimado em</p>
+      </div>
     </div>
 
     <div id="historico" class="tab-conteudo" style="display:none;">
