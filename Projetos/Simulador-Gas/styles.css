@@ -8,6 +8,11 @@
     color: #333;
   }
 
+  img {
+    width: 25px;
+    height: 25px;
+  }
+
   /* Chrome, Safari, Edge, Opera */
   input::-webkit-outer-spin-button,
   input::-webkit-inner-spin-button {
@@ -126,13 +131,26 @@
     background-color: #fff;
   }
 
-  .tab-conteudo {
+  .tabs {
+    display: flex;
+    gap: 8px;
+    justify-content: flex-end;
+    align-items: center;
+  }
+
+  .tab-btn {
+    cursor: pointer;
+    width: 25px;
+    height: 25px;
+  }
+
+  #container {
     background-color: #fff;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     max-width: 400px;
-    height: 440px;
+    height: 480px;
     margin: 0 auto;
   }
 
