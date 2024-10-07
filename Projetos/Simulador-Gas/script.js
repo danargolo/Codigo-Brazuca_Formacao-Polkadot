@@ -3,7 +3,7 @@ let contador = 0;
 let historicoTimeout;
 let temporizadorId;
 
-let divMoeda = document.getElementById('selecao-moeda');
+let divMoeda = document.getElementById('modal-moeda');
 let fiat = document.getElementById('seletor-btn')
 let contadorDisplay = document.getElementById('id_transacao');
 let historicoLista = document.getElementById('historico-lista');
@@ -149,6 +149,12 @@ function validarValor(value) {
     divMoeda.style.display = 'none';
   } else {
     divMoeda.style.display = 'block';
+  }
+})
+
+divMoeda.addEventListener('click', function (e) {
+  if (e.target === divMoeda) {
+    divMoeda.style.display = 'none';
   }
 })
 

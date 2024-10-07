@@ -120,15 +120,32 @@
     visibility: hidden;
   }
 
+  #modal-moeda {
+    display: none; 
+    position: fixed;
+    z-index: 2;
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%;
+    overflow: auto; 
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.4);
+  }
+
   #selecao-moeda {
-    display: none;
-    position: relative;
-    top: -155px;
-    left: 94px;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 50%;
+    left: 50%;
     width: 440px;
     height: 200px;
-    border: 2px solid red;
+    border: 2px solid rgb(170, 164, 164);
+    border-radius: 10px ;
     background-color: #fff;
+    transform: translate(-50%, -50%);
+    z-index: 1;
   }
 
   .tabs {
@@ -145,6 +162,7 @@
   }
 
   #container {
+    position: relative;
     background-color: #fff;
     padding: 20px;
     border-radius: 10px;

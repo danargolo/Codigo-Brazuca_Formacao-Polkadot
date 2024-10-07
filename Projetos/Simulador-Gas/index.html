@@ -35,12 +35,14 @@
           <input type="hidden" id="complexidade" name="complexidade" required>
           <button type="button" id="calcular" disabled>Calcular Preço do Gas</button>
         </form>
-        <div id="selecao-moeda">
-          <div style="display: flex;align-items: center;gap: 2rem;">
-            <h3>Selecione uma moeda</h3>
-            <span>X</span>
+        <div id="modal-moeda">
+          <div id="selecao-moeda">
+            <div style="display: flex;align-items: center;gap: 2rem;">
+              <h3>Selecione uma moeda</h3>
+              <span>X</span>
+            </div>
+            <div id="moedas-container"></div>
           </div>
-          <div id="moedas-container"></div>
         </div>
         <div id="resultado">
           <p class="result_p" id="id_transacao"># 0</p>
