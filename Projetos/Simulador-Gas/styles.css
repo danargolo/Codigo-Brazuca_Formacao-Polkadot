@@ -1,157 +1,184 @@
-body {
-  font-family: Arial, sans-serif;
-  background-color: #f0f0f0;
-  text-align: center;
-  padding: 20px;
-}
-h1 {
-  color: #333;
-}
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    text-align: center;
+    padding: 20px;
+  }
+  h1 {
+    color: #333;
+  }
 
-/* Chrome, Safari, Edge, Opera */
-input::-webkit-outer-spin-button,
-input::-webkit-inner-spin-button {
-  -webkit-appearance: none;
-  margin: 0;
-}
+  /* Chrome, Safari, Edge, Opera */
+  input::-webkit-outer-spin-button,
+  input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
 
-/* Firefox */
-input[type=number] {
-  -moz-appearance: textfield;
-}
+  /* Firefox */
+  input[type=number] {
+    -moz-appearance: textfield;
+  }
 
-input {
-  all: unset;
-}
+  input {
+    all: unset;
+  }
 
-/* form {
-  background-color: #fff;
-  padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  max-width: 400px;
-  margin: 0 auto;
-} */
-label {
-  display: block;
-  margin-bottom: 8px;
-  text-align: left;
-}
-#input-container,
-select {
-  width: 100%;
-  padding: 10px 5px;
-  margin-bottom: 2px;
-  border: 1px solid #ddd;
-  border-radius: 5px;
-}
-button {
-  background-color: #007bff;
-  color: white;
-  padding: 10px 20px;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-}
-button:hover {
-  background-color: #0056b3;
-}
-#resultado {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(3, auto);
-  align-content: center;
-  border: solid 1.5px #333;
-  border-radius: 5px;
-  margin-top: 20px;
-  height: 145px;
-  /* font-size: 18px;
-  font-weight: bold; */
-}
+  /* form {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    margin: 0 auto;
+  } */
+  label {
+    display: block;
+    margin-bottom: 8px;
+    text-align: left;
+  }
+  #input-container,
+  select {
+    width: 100%;
+    padding: 10px 5px;
+    margin-bottom: 2px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+  button {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  button:hover {
+    background-color: #0056b3;
+  }
+  #resultado {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, auto);
+    align-content: center;
+    border: solid 1.5px #333;
+    border-radius: 5px;
+    padding: 10px;
+    margin-top: 20px;
+    height: 145px;
+    justify-items: flex-start;
+    gap: 10px;
+    /* font-size: 18px;
+    font-weight: bold; */
+  }
 
-#id_transacao {
-  grid-column: span 2;
-  justify-self: flex-start;
-  margin: 0 20px;
-}
-#result_gas {
-  grid-column: 1;
-  grid-row: 2;
-}
+  #id_transacao {
+    grid-column: span 2;
+    justify-self: flex-start;
+    margin: 0 20px;
+    font-weight: 600;
+  }
 
-#result_complex {
-  grid-column: 1;
-  grid-row: 3;
-}
+  #result_gas {
+    grid-column: 1;
+    grid-row: 2;
+  }
 
-#result_dot {
-  grid-row: 2;
-  grid-column: 2;
+  #result_complex {
+    grid-column: 1;
+    grid-row: 3;
+  }
 
-}
+  #result_dot {
+    grid-row: 2;
+    grid-column: 2;
 
-#result_currency {
-  grid-column: 2;
-  grid-row: 3;
+  }
 
-}
+  #result_currency {
+    grid-column: 2;
+    grid-row: 3;
 
-
-#input-container {
-  display: flex;
-  justify-content: space-between;
-}
-
-#excecao {
-  display: flex;
-  margin: 5px 0 25px 5px;
-  font-size: 14px;
-  color: red;
-  visibility: hidden;
-}
-
-#selecao-moeda {
-  display: none;
-  position: relative;
-  top: -155px;
-  left: 94px;
-  width: 440px;
-  height: 200px;
-  border: 2px solid red;
-  background-color: #fff;
-}
-
-.tab-conteudo {
-  background-color: #fff;
-  padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  max-width: 400px;
-  height: 440px;
-  margin: 0 auto;
-}
+  }
 
 
-#calcular {
-  margin-top: 20px;
-}
+  #input-container {
+    display: flex;
+    justify-content: space-between;
+  }
 
-.result_p {
-  font-size: 14px;
-  font-weight: 600;
-}
+  #excecao {
+    display: flex;
+    margin: 5px 0 25px 5px;
+    font-size: 14px;
+    color: red;
+    visibility: hidden;
+  }
 
-#valor-transacao {  
-  align-self: center;
-  margin-top: 8px;
-  width: 75%;
-  text-align-last: end;
-}
+  #selecao-moeda {
+    display: none;
+    position: relative;
+    top: -155px;
+    left: 94px;
+    width: 440px;
+    height: 200px;
+    border: 2px solid red;
+    background-color: #fff;
+  }
 
-button:disabled {
-  background-color: #cccccc; 
-  color: #666666;
-  cursor: not-allowed; 
-  opacity: 0.6;
-  border: 1px solid #999999;
-}
+  .tab-conteudo {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    height: 440px;
+    margin: 0 auto;
+  }
+
+
+  #calcular {
+    margin-top: 20px;
+  }
+
+  .result_p {
+    font-size: 13px;
+    font-weight: 400;
+  }
+
+  #valor-transacao {  
+    align-self: center;
+    margin-top: 8px;
+    width: 75%;
+    text-align-last: end;
+  }
+
+  button:disabled {
+    background-color: #cccccc; 
+    color: #666666;
+    cursor: not-allowed; 
+    opacity: 0.6;
+  }
+
+  #moedas-container {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr); /* 2 colunas */
+    grid-template-rows: repeat(2, auto); /* 5 linhas, altura automática */
+    gap: 1rem; /* Espaçamento entre os itens */
+    padding: 1rem; /* Espaçamento interno do container */
+    max-width: 600px; /* Largura máxima do container */
+    margin: auto; /* Centraliza o container */
+  }
+
+  #moedas-container div {
+    background-color: #f0f0f0; /* Cor de fundo dos itens */
+    padding: 1rem; /* Espaçamento interno dos itens */
+    border-radius: 8px; /* Bordas arredondadas */
+    text-align: center; /* Centraliza o texto */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra leve para os itens */
+    transition: background-color 0.3s; /* Transição suave para a cor de fundo */
+  }
+
+  #moedas-container div:hover {
+    background-color: #e0e0e0; /* Cor de fundo ao passar o mouse */
+  }

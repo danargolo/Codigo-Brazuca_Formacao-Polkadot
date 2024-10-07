@@ -9,16 +9,17 @@
   <body>
     <h1>Simulador de Preço de Gas - Polkadot</h1>
     <div class="tabs">
-      <button class="tab-btn" onclick="openTab(event, 'simulador')">Simulador</button>
-      <button class="tab-btn" onclick="openTab(event, 'historico')">Histórico</button>
+      <button class="tab-btn" data-tab="simulador">Simulador</button>
+      <button class="tab-btn" data-tab="historico">Histórico</button>
     </div>
     
     <div id="simulador" class="tab-conteudo">
       <!-- <p id="contador-transacoes">Transações simuladas: 0</p> -->
+      <p>Histórico será limpo em: <span id="temporizador">01:00</span></p>
       <form id="gas-form">
         <!-- <label for="valor-transacao">Valor da Transação (DOT):</label> -->
         <div id="input-container">
-          <button type="button" id="seletor-btn">DOT</button>
+          <button type="button" id="seletor-btn">USD                    </button>
           <input type="number" id="valor-transacao" placeholder="Insira o valor..." required/>
         </div>
         <p id="excecao">Erro ajuste o input</p>
@@ -29,25 +30,21 @@
           <option value="alta">Alta</option>
         </select>
         <input type="hidden" id="complexidade" name="complexidade" required>
-        <button type="button" id="calcular">Calcular Preço do Gas</button>
+        <button type="button" id="calcular" disabled>Calcular Preço do Gas</button>
       </form>
       <div id="selecao-moeda">
         <div style="display: flex;align-items: center;gap: 2rem;">
           <h3>Selecione uma moeda</h3>
           <span>X</span>
         </div>
-        <div>
-          <button class="moeda-btn">BRL</button>
-          <button class="moeda-btn">USD</button>
-          <button class="moeda-btn">EUR</button>
-        </div>
+        <div id="moedas-container"></div>
       </div>
       <div id="resultado">
         <p class="result_p" id="id_transacao"># 0</p>
-        <p class="result_p" id="result_gas">Transação</p>
-        <p class="result_p" id="result_complex">Complexidade</p>
-        <p class="result_p" id="result_dot">preço estimado em</p>
-        <p class="result_p" id="result_currency">preço estimado em</p>
+        <p class="result_p" id="result_gas">Valor da Transação: <span id="result-transacao">0</span></p>
+        <p class="result_p" id="result_complex">Nível de Complexidade: <span id="result-complexidade">Baixo</span></p>
+        <p class="result_p" id="result_dot">Gas Estimado em DOT: <span id="result-dot-estimado">0</p>
+        <p class="result_p" id="result_currency">Gas Estimado em <span id="result-preco-estimado">USD: 0</span></p>
       </div>
     </div>
 
@@ -57,6 +54,6 @@
       <ul id="historico-lista">
       </ul>
     </div>
-    <script src="script.js"></script>
+    <script  type="module" src="script.js"></script>
   </body>
 </html>
