@@ -5,7 +5,7 @@
 O **Gas Price Simulator** é uma aplicação web que permite simular o preço do gas em relação a Polkadot (DOT). Com uma interface intuitiva, você pode selecionar diferentes moedas fiduciárias para obter a conversão do valor do gas em tempo real. Este projeto foi desenvolvido com **Node.js**, **Express** e está hospedado na Vercel.
 
 ## Demonstração
-Acesse a aplicação ao vivo: [Gas Price Simulator](https://gas-simulator.vercel.app/)
+Deploy da aplicação: [Gas Price Simulator](https://gas-simulator.vercel.app/)
 
 ## Tecnologias Utilizadas
 - **HTML/CSS/JS**: Tecnologias utilizadas para o desenvolvimento do frontend.
