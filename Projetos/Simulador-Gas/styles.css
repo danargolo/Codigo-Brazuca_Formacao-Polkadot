@@ -8,9 +8,9 @@
     color: #333;
   }
 
-  img {
-    width: 25px;
-    height: 25px;
+  img, svg {
+    width: 28px;
+    height: 28px;
   }
 
   /* Chrome, Safari, Edge, Opera */
@@ -29,14 +29,10 @@
     all: unset;
   }
 
-  /* form {
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    max-width: 400px;
-    margin: 0 auto;
-  } */
+  form {
+    margin-top: 10px;
+  }
+
   label {
     display: block;
     margin-bottom: 8px;
@@ -150,7 +146,7 @@
 
   .tabs {
     display: flex;
-    gap: 8px;
+    gap: 15px;
     justify-content: flex-end;
     align-items: center;
   }
@@ -218,3 +214,20 @@
   #moedas-container div:hover {
     background-color: #e0e0e0; /* Cor de fundo ao passar o mouse */
   }
+
+  #svg-container {
+    position: relative;
+  }
+
+  #temporizador {
+    position: absolute;
+    top: 8.7px;
+    left: 8.6px;
+    font-size: clamp(9.8px, 1.5vw, 10.1px);
+    font-weight: 600;
+    color: #666666;
+}
+
+.ellipse {
+  transition: opacity ease-in 250ms;
+}
