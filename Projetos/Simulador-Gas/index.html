@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Simulador de Preço de Gas - Polkadot</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h1>Simulador de Preço de Gas - Polkadot</h1>
+    <div id="container">
+      <div class="tabs">
+        <div class="tab-btn" data-tab="simulador">
+          <img src="./assets/calc2.svg" alt="simulador-logo"/>
+        </div>
+        <div class="tab-btn" data-tab="historico">
+          <img src="./assets/hist2.svg" alt="historico-logo"/>
+        </div>
+        <div id="svg-container" class="tab-count">
+          <div id="svg-countdown"></div>
+          <span id="temporizador">60</span>
+        </div>
+      </div>
+      <div id="simulador" class="tab-conteudo">
+      
+        <form id="gas-form">
+          <div id="input-container">
+            <button type="button" id="seletor-btn">USD                    </button>
+            <input type="number" id="valor-transacao" placeholder="Insira o valor..." required/>
+          </div>
+          <p id="excecao">Erro ajuste o input</p>
+          <label for="complexidade">Complexidade da Transação:</label>
+          <select id="complexidade" required>
+            <option value="baixa">Baixa</option>
+            <option value="media">Média</option>
+            <option value="alta">Alta</option>
+          </select>
+          <input type="hidden" id="complexidade" name="complexidade" required>
+          <button type="button" id="calcular" disabled>Calcular Preço do Gas</button>
+        </form>
+        <div id="modal-moeda">
+          <div id="selecao-moeda">
+            <div style="display: flex;align-items: center;gap: 2rem;">
+              <h3>Selecione uma moeda</h3>
+              <span>X</span>
+            </div>
+            <div id="moedas-container"></div>
+          </div>
+        </div>
+        <div id="resultado">
+          <p class="result_p" id="id_transacao"># 0</p>
+          <p class="result_p" id="result_gas">Valor da Transação: <span id="result-transacao">0</span></p>
+          <p class="result_p" id="result_complex">Complexidade: <span id="result-complexidade">Baixo</span></p>
+          <p class="result_p" id="result_dot">Gas Estimado em DOT: <span id="result-dot-estimado">0</p>
+          <p class="result_p" id="result_currency">Gas Estimado em <span id="result-preco-estimado">USD: 0</span></p>
+        </div>
+      </div>
+  
+      <div id="historico" class="tab-conteudo" style="display:none;">
+        <h2>Histórico de Transações</h2>
+        <ul id="historico-lista">
+        </ul>
+      </div>
+    </div>
+    <script  type="module" src="script.js"></script>
+  </body>
+</html>

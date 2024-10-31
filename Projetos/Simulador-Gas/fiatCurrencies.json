@@ -1,0 +1,54 @@
+{
+  "fiatCurrencies": [
+    {
+      "name": "Dólar Americano",
+      "symbol": "$",
+      "code": "USD"
+    },
+    {
+      "name": "Euro",
+      "symbol": "€",
+      "code": "EUR"
+    },
+    {
+      "name": "Iene Japonês",
+      "symbol": "¥",
+      "code": "JPY"
+    },
+    {
+      "name": "Libra Esterlina",
+      "symbol": "£",
+      "code": "GBP"
+    },
+    {
+      "name": "Franco Suíço",
+      "symbol": "CHF",
+      "code": "CHF"
+    },
+    {
+      "name": "Dólar Canadense",
+      "symbol": "$",
+      "code": "CAD"
+    },
+    {
+      "name": "Yuan Chinês",
+      "symbol": "¥",
+      "code": "CNY"
+    },
+    {
+      "name": "Dólar de Hong Kong",
+      "symbol": "$",
+      "code": "HKD"
+    },
+    {
+      "name": "Real Brasileiro",
+      "symbol": "R$",
+      "code": "BRL"
+    },
+    {
+      "name": "Argentine Peso",
+      "symbol": "$",
+      "code": "ARS"
+    }
+  ]
+}
