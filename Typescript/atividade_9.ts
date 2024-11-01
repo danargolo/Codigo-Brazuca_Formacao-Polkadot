@@ -8,7 +8,7 @@ function reverterArray<T>(items: T[]): T[] {
     }
     grupo[tipo].push(item)
   })
-  const agrupados: T[] = Object.values(grupo).reduce((acc, grupo) => acc.concat(grupo), []);
+  const agrupados: T[] = Object.values(grupo).reduce((acc, elemento) => acc.concat(elemento), []);
 
   return agrupados.reverse();
   }
