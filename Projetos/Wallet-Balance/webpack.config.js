@@ -1,7 +1,16 @@
-import path from 'node:path';
-const HtmlWebpackPlugin = require("html-webpack-plugin");
-module.exports = {
+import path from 'path';
+import dotenv from 'dotenv';
+import { fileURLToPath } from 'url';
+import HtmlWebpackPlugin from 'html-webpack-plugin';
+
+dotenv.config();
+
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
+
+export default {
   entry: "./src/index.ts",
+  mode: "development",
   module: {
     rules: [
       {
