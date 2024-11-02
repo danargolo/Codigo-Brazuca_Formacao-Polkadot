@@ -1,9 +1,9 @@
 import path from 'path';
-import dotenv from 'dotenv';
+import Dotenv from 'dotenv-webpack';
 import { fileURLToPath } from 'url';
 import HtmlWebpackPlugin from 'html-webpack-plugin';
 
-dotenv.config();
+// dotenv.config();
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -29,6 +29,7 @@ export default {
     clean: true,
   },
   plugins: [
+    new Dotenv(),
     new HtmlWebpackPlugin({
       template: "./index.html",
     }),

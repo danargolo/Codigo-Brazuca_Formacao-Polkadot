@@ -11,16 +11,16 @@
   },
   "author": "",
   "license": "ISC",
-  "dependencies": {
-    "ethers": "^6.13.4"
-  },
   "devDependencies": {
-    "dotenv": "^16.4.5",
+    "dotenv-webpack": "^8.1.0",
     "html-webpack-plugin": "^5.6.3",
     "ts-loader": "^9.5.1",
     "typescript": "^5.6.3",
     "webpack": "^5.96.1",
     "webpack-cli": "^5.1.4",
     "webpack-dev-server": "^5.1.0"
+  },
+  "dependencies": {
+    "ethers": "^5.7.2"
   }
 }
